@@ -1,5 +1,6 @@
 package com.xcc.pjtwo.sys.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.xcc.pjtwo.sys.entity.User;
 
 /**
@@ -10,6 +11,6 @@ import com.xcc.pjtwo.sys.entity.User;
  * @author xcc
  * @since 2020-11-26
  */
-public interface IUserService {
+public interface IUserService extends IService<User> {
     User getById(Long id);
 }
